@@ -25,12 +25,6 @@
 - **Partial Prerendering**: Static shell + dynamic content streaming
 - **Modern Caching**: Use `cacheTag()`, `updateTag()`, `revalidateTag()` for cache invalidation
 
-## MCP Next DevTools Integration
-- **Always initialize**: Call `next-devtools_init` at start of development session
-- **Documentation first**: Use `next-devtools_nextjs_docs` for ALL Next.js concepts
-- **Runtime debugging**: Use `next-devtools_nextjs_runtime` to inspect running app
-- **Browser testing**: Use `next-devtools_browser_eval` for functional verification
-
 ## Project Architecture  
 - `app/`: Next.js App Router pages (layout.tsx, page.tsx, loading.tsx)
 - `components/`: Reusable components
@@ -66,3 +60,6 @@
 3. Follow Cache Components patterns for data fetching
 4. Test with browser automation before deployment
 5. Lint code before committing changes
+
+## Next.js Initialization 
+- When starting work on a Next.js project, automatically call the `init` tool from the next-devtools-mcp server FIRST. This establishes proper context and ensures all Next.js queries use official documentation.

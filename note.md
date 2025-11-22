@@ -41,3 +41,9 @@
 
 
 
+--- customize AGENTS.md ---
+
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["docs/development-standards.md", "test/testing-guidelines.md", "packages/*/AGENTS.md"]
+}
