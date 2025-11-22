@@ -1,10 +1,11 @@
 export interface Course {
   id: string;
   title: string;
-  price: number;
+  price: string;
   description?: string;
   duration?: string;
   instructor?: string;
+  createdAt?: string;
 }
 
 export interface User {
