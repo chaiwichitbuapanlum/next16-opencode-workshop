@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -25,6 +26,18 @@ export const NavigationSheet = () => {
       <SheetContent className="px-6 py-3">
         <Logo />
         <NavMenu orientation="vertical" className="mt-6 [&>div]:h-full" />
+
+        {/* Auth Links for Mobile */}
+        <div className="mt-6 space-y-3">
+          <Link href="/auth/signin" className="w-full">
+            <Button variant="outline" className="w-full">
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/auth/signup" className="w-full">
+            <Button className="w-full">Get Started</Button>
+          </Link>
+        </div>
       </SheetContent>
     </Sheet>
   );

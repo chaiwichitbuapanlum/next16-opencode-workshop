@@ -11,5 +11,15 @@ export interface Course {
 export interface User {
   id: string;
   name: string;
-  bio: string;
+  bio?: string;
+  email: string;
+}
+
+export interface AuthUser extends User {
+  password?: string;
+}
+
+export interface Session {
+  userId: string;
+  expiresAt: Date;
 }
