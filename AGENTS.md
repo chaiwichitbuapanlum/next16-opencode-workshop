@@ -8,7 +8,6 @@
 - **No test runner**: Project doesn't include test commands
 
 ## Code Style Guidelines
-- **TypeScript**: Strict mode enabled, use explicit typing
 - **Imports**: Use `@/` path alias for absolute imports from project root
 - **Components**: PascalCase for components, export default for pages/main components  
 - **Functions**: Use async/await pattern, proper error handling with try/catch

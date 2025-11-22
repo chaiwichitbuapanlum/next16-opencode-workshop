@@ -1,11 +1,18 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["typescript-guidelines.md"], // เพื่อใช้สำหรับทุกคน ให้ ai เขียนเหมือนกัน
+  "instructions": [
+    "typescript-guidelines.md"
+  ], // เพื่อใช้สำหรับทุกคน ให้ ai เขียนเหมือนกัน
   "mcp": {
     "next-devtools-mcp": {
       "type": "local",
-      "command": ["npx", "-y", "next-devtools-mcp@latest"],
+      "command": [
+        "npx",
+        "-y",
+        "next-devtools-mcp@latest"
+      ],
       "enabled": true
     }
   },
+
 }
