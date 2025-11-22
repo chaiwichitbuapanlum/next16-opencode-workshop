@@ -3,6 +3,14 @@
   "instructions": [
     "typescript-guidelines.md"
   ], // เพื่อใช้สำหรับทุกคน ให้ ai เขียนเหมือนกัน
+  "permission": {
+    "bash": {
+      "git push": "ask",
+      "git add": "ask",
+      "git commit": "ask"
+    },
+    "webfetch": "ask"
+  },
   "mcp": {
     "next-devtools-mcp": {
       "type": "local",
