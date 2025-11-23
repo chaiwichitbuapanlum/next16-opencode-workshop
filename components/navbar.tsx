@@ -15,7 +15,10 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <Link href="/auth/signin">
-            <Button variant="outline" className="hidden sm:inline-flex">
+            <Button
+              variant="outline"
+              className="hidden sm:inline-flex transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md hover:bg-blue-100 hover:text-blue-700"
+            >
               Sign In
             </Button>
           </Link>

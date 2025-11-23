@@ -49,7 +49,11 @@ export default function SignInForm() {
           </div>
         )}
 
-        <Button type="submit" className="w-full" disabled={pending}>
+        <Button
+          type="submit"
+          className="w-full shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-600"
+          disabled={pending}
+        >
           {pending ? "กำลังเข้าสู่ระบบ..." : "เข้าสู่ระบบ"}
         </Button>
       </Form>
